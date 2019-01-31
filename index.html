@@ -9,7 +9,7 @@
     <link rel="style" type="text/css" media="screen" href="style" />
     <script>
         function openTab(index) {
-            var element = document.getElementsByTagName('div');
+            var element = document.getElementsByTagName('article');
             var name = "";
             var obj;
 
@@ -57,7 +57,10 @@
         .tab_box {
             float: left;
             color: white;
-            width: 100%;
+            width: 50%;
+            text-align:left;
+            margin-top: 50px;
+            margin-left:25%;
         }
 
         body {
@@ -106,39 +109,41 @@
         <hr />
     </h2>
     <!-- Tab Menü -->
-    <div id='tabmenu' class='tabmenu'>
+    <article id='tabmenu' class='tabmenu'>
         <!-- Tab-Reiter -->
-        <div id='tab_top_1' class='tab_top_active' onclick='javascript:openTab(1)'>Info</div>
-        <div id='tab_top_2' class='tab_top_active' onclick='javascript:openTab(2)'>Links</div>
-        <div id='tab_top_3' class='tab_top_active' onclick='javascript:openTab(3)'>Library</div>
-        <div id='tab_top_4' class='tab_top_active' onclick='javascript:openTab(4)'>Specs</div>
+        <article id='tab_top_1' class='tab_top_active' onclick='javascript:openTab(1)'>Info</article>
+        <article id='tab_top_2' class='tab_top_active' onclick='javascript:openTab(2)'>Links</article>
+        <article id='tab_top_3' class='tab_top_active' onclick='javascript:openTab(3)'>Library</article>
+        <article id='tab_top_4' class='tab_top_active' onclick='javascript:openTab(4)'>Specs</article>
         </br>
         </br>
         <hr/>
         <!--float aufheben-->
-        <div style='clear: both;'>
+        <article style='clear: both;'>
 
-        </div>
+        </article>
         <!-- Inhalts-Boxen -->
-        <!-- Box 1 - Bilder -->
-        <div id='tab_box_1' class='tab_box'>
+        <!-- Box 1 - Info -->
+        <article id='tab_box_1' class='tab_box'>
 
-        </div>
+        </article>
         <!-- Box 2 - Links -->
-        <div id='tab_box_2' class='tab_box'>
+        <article id='tab_box_2' class='tab_box'>
             </br>
             Steam --> <a href="https://steamcommunity.com/id/JCereal/"> JCereal's Steamprofile</a></br>
             Discord Username --> JCereal#7493 </br>
-        </div>
-        <!-- Box 3 - Einstellungen -->
-        <div id='tab_box_3' class='tab_box'>
-
-        </div>
+        </article>
+        <!-- Box 3 - Library -->
+        <article id='tab_box_3' class='tab_box'>
+            <img src="stuff/Schelle.gif" alt="Schelle" width= 100% height = 100% title= "Schelle">
+        </article>
          <!-- Box 3 - Specs -->
-         <div id='tab_box_4' class='tab_box'>
-            Specs:
-            </div>
-    </div>
+         <article id='tab_box_4' class='tab_box'>
+            <strong>Specs:</strong> </br>
+
+         </article>
+            </article>
+    </article>
 
 </body>
 
