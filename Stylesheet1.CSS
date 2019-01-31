@@ -4,3 +4,6 @@ body{
 h1{
     align-content: center;
 }
+h2{
+    background-color: darkgreen;
+}
