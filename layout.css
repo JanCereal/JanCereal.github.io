@@ -60,3 +60,7 @@ a:link {
     color: blue;
     background-color: transparent;
   }
+  .infoClass{
+      margin-left: 20%;
+      text-align: left;
+  }

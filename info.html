@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
 </head>
-<body>
-<hr/>
-<h2>    ~ Infos ~   </h2>
-<a href="index.html">Menu</a> - <a href="library.html">Library</a> - <a href="#">Stuff</a>
-<hr/>
-<div>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-<footer>
-    <hr/>
-    <a href="index.html">Menu</a> - <a href="library.html">Library</a> - <a href="#">Stuff</a></div>
-</footer> 
+        $("#d0").click(function () {
+            $("#d0c").slideToggle()
+        })
+
+        $("#d1").click(function () {
+            $("#d1c").slideToggle()
+        })
+
+        $("#d2").click(function () {
+            $("#d2c").slideToggle()
+        })
+    });
+</script>
+
+<body>
+    <hr />
+    <h2> ~ Infos ~ </h2>
+    <a href="index.html">Home</a> - <a href="info.html">Infos</a> - <a href="library.html">Library</a> - <a
+        href="#">Stuff</a>
+    <hr />
+
+    <a id="d0"><strong id="d0"></strong>- Account Details -</strong></a>
+    <br />
+    <div id="d0c" class="infoClass" style="display: none">
+        Steam - <a href="https://steamcommunity.com/id/JCereal/" style="text-decoration-line: underline"> JCereal's
+            Steamprofile</a></br>
+        Discord Username - JCereal#7493 </br>
+        uPlay Username - JC3real </br>
+        Origin Username - JCerealz </br>
+        Battle.net Username - Elanjos#2716 </br>
+    </div>
+    <br />
+
+    <a id="d1"><strong id="d1"></strong>- KontaktInformationen -</strong></a>
+    <br />
+    <div id="d1c" class="infoClass" style="display: none">
+        Email - janbmed@gmail.com
+    </div>
+    <br />
+
+    <a id="d2"><strong id="d2"></strong>- Top 10 Games -</strong></a>
+    <br />
+    <div id="d2c" class="infoClass" style="display: none">
+        1 -<br />
+        2 -<br />
+        3 -<br />
+        4 -<br />
+        5 -<br />
+        6 -<br />
+        7 -<br />
+        8 -<br />
+        9 -<br />
+        10 -<br />
+    </div>
+    <br />
+
+    <footer>
+        <hr />
+        <a href="index.html">Home</a> - <a href="info.html">Infos</a> - <a href="library.html">Library</a> - <a
+            href="#">Stuff</a>
+    </footer>
 </body>
+
 </html>
