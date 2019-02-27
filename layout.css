@@ -19,7 +19,7 @@ footer
     margin-top: 10px;
 }
 .imgBox{
-    border:solid 1px red;
+    /* border:solid 1px red; */
     border-radius:5px;
     padding:10px;
     text-align:center;
