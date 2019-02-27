@@ -1,0 +1,62 @@
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+.reiter{
+    size: 360px;
+    text-align: left;
+    color: white;
+}
+footer
+{
+    font-size:15px;
+    margin-bottom: 5px;
+    width:100%;
+    position: relative;
+    height: 40px;
+    margin-top: 10px;
+}
+.imgBox{
+    border:solid 1px red;
+    border-radius:5px;
+    padding:10px;
+    text-align:center;
+    margin-bottom: 10px;
+}
+body {
+    color: white;
+    text-align: center;
+    text-size-adjust: 60;
+    background-image: url("stuff/woods.jpg");
+
+}
+.imgBox {
+    color: white;
+    width: 50%;
+    text-align:center;
+    margin-top: 20px;
+    margin-left:25%;
+}
+a:link { 
+    color:white;
+    background-color: transparent; 
+    text-decoration-line: none;
+  }
+  
+  a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration-line: none;
+  }
+  
+  a:hover {
+    color:white;
+    background-color: transparent;
+  }
+  
+  a:active {
+    color: blue;
+    background-color: transparent;
+  }
