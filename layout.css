@@ -13,7 +13,6 @@ footer
 {
     font-size:15px;
     margin-bottom: 5px;
-    width:100%;
     position: relative;
     height: 40px;
     margin-top: 10px;
@@ -26,11 +25,11 @@ footer
     margin-bottom: 10px;
 }
 body {
+    height: 50%;
     color: white;
     text-align: center;
-    text-size-adjust: 60;
+    text-size-adjust: 100;
     background-image: url("stuff/woods.jpg");
-
 }
 .imgBox {
     color: white;
@@ -95,4 +94,31 @@ a:link {
     margin: 1.5px;
     font-family: verdana;
     vertical-align: center;
+  }
+
+  html {
+      height: 50%;
+  }
+
+  .parallax {
+      /* The image used */
+      background-image: url("stuff/woods.jpg");
+
+      /* Set a specific height */
+      height: 100%;
+      width: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .darken {
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%),rgb(0, 5, 3);
+    background: linear-gradient(to bottom rgba(0, 0, 0, 0.2) 30%, rgba(0, 12, 6, 1) 70%);
+    background-size: cover;
+    height: 100%;
+
   }
