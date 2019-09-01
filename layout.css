@@ -26,10 +26,14 @@ footer
 }
 body {
     height: 50%;
-    color: darkgreen;
+    color: white;
     text-align: center;
     text-size-adjust: 100;
-    /*background-image: url("stuff/woods.jpg");*/
+    background: url("stuff/woods.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .imgBox {
     color: white;
