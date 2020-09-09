@@ -43,7 +43,7 @@ body {
 .selectionBox {
   border: none;
   background-color: inherit;
-  color: white;
+  color:inherit;
   padding: 14px 28px;
   font-size: 14px;
   cursor: pointer;
@@ -52,6 +52,11 @@ body {
 
 #selectionBox{
   width:100%;
+  color:inherit;
+}
+
+select option{
+  background-color:rgb(1, 31, 19);
 }
 
 a:link { 
@@ -79,15 +84,6 @@ a:active {
 .infoClass{
   margin-left: 20%;
   text-align: left;
-}
-
-.darken {
-
-  background: linear-gradient(rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%),rgb(0, 5, 3);
-  background: linear-gradient(to bottom rgba(0, 0, 0, 0.2) 30%, rgba(0, 12, 6, 1) 70%);
-  background-size: cover;
-  height: 100%;
-
 }
 
 .libraryThumb {
