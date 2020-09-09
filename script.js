@@ -1,32 +1,39 @@
 "use strict";
 
-var counter_list = [10,10000,10000];
-var str_counter_0 = counter_list[0];
-var str_counter_1 = counter_list[1];
-var str_counter_2 = counter_list[2];
-var display_str = "";
-var display_div = document.getElementById("display_div_id");
+filterSelection("all")
 
-function incrementCount(current_count){
-  setInterval(function(){
-    // clear count
-    while (display_div.hasChildNodes()) {
-        display_div.removeChild(display_div.lastChild);
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3AddClass(x[i], "showNot");
+    if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "showNot");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
     }
-    str_counter_0++;
-    if (str_counter_0 > 99) {
-      str_counter_0 = 10; // reset count
-      str_counter_1++;    // increase next count
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
-    if(str_counter_1>99999){
-      str_counter_2++;
-    }
-    display_str = str_counter_2.toString() + str_counter_1.toString() + str_counter_0.toString();
-    for (var i = 0; i < display_str.length; i++) {
-      var new_span = document.createElement('span');
-      new_span.className = 'num_tiles';
-      new_span.innerText = display_str[i];
-      display_div.appendChild(new_span);
-    }
-  },1000);
+  }
+  element.className = arr1.join(" ");
 }

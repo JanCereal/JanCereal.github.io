@@ -8,20 +8,30 @@
     <link rel="icon" href="stuff/JCerealVektor.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<script src="script.js"></script>
 
 <body class="darken">
 
     <h2> ~ Library ~ </h2>
     <a href="index.html">Home</a> - <a href="info.html">Infos</a> - <a href="library.html">Library</a> - <a href="reviews.html">Reviews</a> - <a href="#">Stuff</a>
     <hr />
-
+    <select class="selectionBox"  id="selectionBox" onchange="filterSelection(value)">
+        <option class="selection" value='all'>Show all</option>
+        <option class="selection" value="bl">Borderlands</option>
+        <option class="selection" value="poe">Path of Exile</option>
+        <option class="selection" value="mh">Monster Hunter</option>
+        <option class="selection" value="val">Valorant</option>
+        <option class="selection" value="cs" >Counter Strike GO</option>
+    </select>
+    <hr />
     <br />
 
     <div class="gallery" >
 
-            <a href="LibraryPics/borderlands.jpg"><img src="stuff/borderlands.jpg" class="libraryThumb" title="Borderlands easteregg"></a>
-            <a href="LibraryPics/mh.jpg"><img src="stuff/mh.jpg" class="libraryThumb" title="Monsterhunter"></a>
-            <a href="LibraryPics/PoeFullAtlas.jpg"><img src="LibraryPics/PoeFullAtlas.jpg" class="libraryThumb" title="PoeFullAtlas"></a>
+            <a href="LibraryPics/borderlands.jpg"><img src="stuff/borderlands.jpg" class="libraryThumb filterDiv bl" title="Borderlands easteregg"></a>
+            <a href="LibraryPics/mh.jpg"><img src="stuff/mh.jpg" class="libraryThumb filterDiv mh" title="Monsterhunter "></a>
+            <a href="LibraryPics/PoeFullAtlas.jpg"><img src="LibraryPics/PoeFullAtlas.jpg" class="libraryThumb filterDiv poe" title="PoeFullAtlas"></a>
+            <a href="LibraryPics/CsGoCarry.jpg"><img src="LibraryPics/CsGoCarry.jpg" class="libraryThumb filterDiv cs" title=" verdienter Win"></a>
 
 
     </div>
