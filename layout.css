@@ -17,15 +17,8 @@ footer
     height: 40px;
     margin-top: 10px;
 }
-.imgBox{
-    /* border:solid 1px red; */
-    border-radius:5px;
-    padding:10px;
-    text-align:center;
-    margin-bottom: 10px;
-}
+
 body {
-    height: 50%;
     color: white;
     text-align: center;
     text-size-adjust: 100;
@@ -35,94 +28,81 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-.imgBox {
-    color: white;
-    width: 50%;
-    text-align:center;
-    margin-top: 20px;
-    margin-left:25%;
-}
+
 a:link { 
-    color:white;
-    background-color: transparent; 
-    text-decoration-line: none;
-  }
+  color:white;
+  background-color: transparent; 
+  text-decoration-line: none;
+}
   
-  a:visited {
-    color:white;
-    background-color: transparent;
-    text-decoration-line: none;
-  }
+a:visited {
+  color:white;
+  background-color: transparent;
+  text-decoration-line: none;
+}
   
-  a:hover {
-    color:white;
-    background-color: transparent;
-  }
+a:hover {
+  color:white;
+  background-color: transparent;
+}
   
-  a:active {
-    color: blue;
-    background-color: transparent;
-  }
-  .infoClass{
-      margin-left: 20%;
-      text-align: left;
-  }
-  .main_container {
-    height: 46px;
-    width: auto;
-    padding: 3px;
-    margin: 2px;
-    max-width: 300px;
-    background-color: #555555;
-    align-content: center;
-  }
-  .container_inner {
-    height: auto;
-    border: none;
-    background-color: #555555;
-    max-width: 290px;
-    vertical-align: center;
-    padding-top: 12px;
-    padding-left: 10px;
-    align-content: center;
-  }
-   .num_tiles {
-    width:30px;
-    height: 30px;
-    background-color: #888888;
-    color: #ffffff;
-    font-size: 22px;
-    text-align: center;
-    line-height: 20px;
-    padding: 3px;
-    margin: 1.5px;
-    font-family: verdana;
-    vertical-align: center;
-  }
+a:active {
+  color: blue;
+  background-color: transparent;
+}
 
-  html {
-      height: 50%;
-  }
+.infoClass{
+  margin-left: 20%;
+  text-align: left;
+}
 
-  .parallax {
-      /* The image used */
-      background-image: url("stuff/woods.jpg");
+.main_container {
+  height: 46px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 300px;
+  background-color: #555555;
+  align-content: center;
+}
 
-      /* Set a specific height */
-      height: 100%;
-      width: 100%;
+.container_inner {
+  height: auto;
+  border: none;
+  background-color: #555555;
+  max-width: 290px;
+  vertical-align: center;
+  padding-top: 12px;
+  padding-left: 10px;
+  align-content: center;
+}
 
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
+.num_tiles {
 
-  .darken {
-    background: linear-gradient(rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%),rgb(0, 5, 3);
-    background: linear-gradient(to bottom rgba(0, 0, 0, 0.2) 30%, rgba(0, 12, 6, 1) 70%);
-    background-size: cover;
-    height: 100%;
+  width:30px;
+  height: 30px;
+  background-color: #888888;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  line-height: 20px;
+  padding: 3px;
+  margin: 1.5px;
+  font-family: verdana;
+  vertical-align: center;
 
-  }
+}
+
+.darken {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%),rgb(0, 5, 3);
+  background: linear-gradient(to bottom rgba(0, 0, 0, 0.2) 30%, rgba(0, 12, 6, 1) 70%);
+  background-size: cover;
+  height: 100%;
+
+}
+
+.libraryThumb {
+  max-width: 30%;
+  max-height: 30%;
+}

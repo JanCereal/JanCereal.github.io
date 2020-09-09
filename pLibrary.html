@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+    <link rel="icon" href="stuff/JCerealVektor.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="darken">
+
+    <h2> ~ Library ~ </h2>
+    <a href="index.html">Home</a> - <a href="info.html">Infos</a> - <a href="library.html">Library</a> - <a href="reviews.html">Reviews</a> - <a href="#">Stuff</a>
+    <hr />
+
+    <br />
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all </button>
+        <button class="btn" onclick="filterSelection('cars')"> Monsterhunter </button>
+        <button class="btn" onclick="filterSelection('animals')"> Borderlands </button>
+        <button class="btn" onclick="filterSelection('fruits')"> Valorant </button>
+        <button class="btn" onclick="filterSelection('colors')"> CsGo </button>
+    </div>
+
+    <br />
+
+    <div class="gallery" >
+
+        <div class="gallery filterDiv Borderlands"> 
+            <a href="LibraryPics/borderlands.jpg"><img src="stuff/borderlands.jpg" class="libraryThumb" title="Borderlands easteregg"></a>
+        </div>
+
+        <div class="gallery filterDiv Monsterhunter"> 
+            <a href="LibraryPics/mh.jpg"><img src="stuff/mh.jpg" class="libraryThumb" title="Monsterhunter"></a>
+        </div>
+
+        <div class="gallery filterDiv PoE"> 
+            <a href="LibraryPics/PoeFullAtlas.jpg"><img src="LibraryPics/PoeFullAtlas.jpg" class="libraryThumb" title="PoeFullAtlas"></a>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <hr />
+        <a href="index.html">Home</a> - <a href="info.html">Infos</a> - <a href="library.html">Library</a> - <a href="reviews.html">Reviews</a> - <a href="#">Stuff</a>
+    </footer>
+</body>
+
+</html>
