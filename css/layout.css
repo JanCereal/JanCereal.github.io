@@ -105,6 +105,15 @@ a:active {
   display: none;
 }
 
+.divBox{
+  padding:5px;
+  margin-left: 200px;
+  margin-right: 200px;
+  align-content: center;
+  text-align: left;
+  font-size: 18px;
+}
+
 /* lightbox*/
 
 .lb-loader,.lightbox{
