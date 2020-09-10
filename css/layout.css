@@ -36,8 +36,11 @@ body {
 
 .gallery img{
   transition: 1s;
-  padding: 15px;
-  width: 250px;
+  padding: 1px;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin: 15px;
 }
 
 .selectionBox {
