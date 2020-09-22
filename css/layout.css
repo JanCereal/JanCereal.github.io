@@ -43,6 +43,15 @@ body {
   margin: 15px;
 }
 
+.gallery video{
+  transition: 1s;
+  padding: 1px;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin: 15px;
+}
+
 .selectionBox {
   border: none;
   background-color: inherit;
