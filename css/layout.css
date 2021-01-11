@@ -1,33 +1,148 @@
 h1{
-    font-size: 40px;
+  font-size: 40px;
 }
+
 h2{
-    font-size: 30px;
+  font-size: 30px;
 }
-.reiter{
-    size: 360px;
-    text-align: left;
-    color: white;
+
+h5{
+  font-size: 16px;
 }
+
 footer
 {
-    font-size:15px;
-    margin-bottom: 5px;
-    position: relative;
-    height: 40px;
-    margin-top: 10px;
+  font-size:15px;
+  margin-bottom: 5px;
+  position: relative;
+  height: 40px;
+  margin-top: 10px;
 }
 
 body {
-    color: white;
-    text-align: center;
-    text-size-adjust: 100;
-    background: url("stuff/woods.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+color: white;
+text-align: center;
+text-size-adjust: 100;
+background: url("stuff/woods.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+margin: 0px;
+animation: transitionIn 0.75s
 }
+
+.header {
+padding: 30px;
+font-size: 40px;
+text-align: center;
+}
+
+.leftcolumn {
+float: left;
+width: 74%;
+padding-right: 1%;
+}
+
+.rightcolumn {
+float: right;
+width: 24%;
+padding-left: 1%;
+}
+
+.img {
+background-color: #aaa;
+max-width: 100%;
+}
+
+.card {
+background-color: rgb(12, 27, 20);
+padding: 20px;
+margin-top: 20px;
+border-style: groove;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.footer {
+padding: 20px;
+text-align: center;
+background: transparent;
+margin-top: 20px;
+}
+
+/* Style tab links */
+.tablink {
+background-color: #555;
+color: white;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-size: 17px;
+width: 33.33%;
+}
+
+.tablink:hover {
+background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+color: white;
+display: none;
+padding: 100px 10px;
+height: 100%;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
+}
+
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.column {
+  flex: 50%;
+  max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {
+  width: 100%;
+  padding: 0;
+}
+}
+
+
 
 .gallery {
   margin: 5px 10px;
@@ -36,7 +151,6 @@ body {
 
 .gallery img{
   transition: 1s;
-  padding: 1px;
   width: 300px;
   border: 1px solid white;
   border-radius: 8px;
@@ -53,13 +167,14 @@ body {
 }
 
 .selectionBox {
-  border: none;
+  border: groove;
   background-color: inherit;
   color:inherit;
-  padding: 14px 28px;
   font-size: 14px;
   cursor: pointer;
   display: inline-block;
+  padding:2px;
+  width: 100%;
 }
 
 #selectionBox{

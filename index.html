@@ -5,27 +5,135 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/layout.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="icon" href="css/stuff/WWB.png">
-    <title>WWB</title>
+    <title>WilligeWaldburschen</title>
 </head>
 
-<body style ="align-content: center">
+<button id="defaultOpen" class="tablink" onclick="openPage('Home', this, 'gray')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'gray')">News and Stuff</button>
+<button class="tablink" onclick="openPage('Gallerie', this, 'gray')">Gallerie</button>
+
+<!-- Home -->
+<div id="Home" class="tabcontent">
+    <img src="css/stuff/WWB.png" class="img" style="border: 1px solid white">
+    <p>Home is where the dude is...</p>
+</div>
+
+<!-- Newspage / Posts -->
+<div id="News" class="tabcontent">
+    <div class="row">
+
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>My Dudes</h2>
+                <h5>We have games to play my dudes , Jan 11 , 2021</h5>
+                <img src="LibraryPics/pp.jpg" class="img">
+                <p>YEEEEAAAHHHHH.....</p>
+            </div>
+
+            <div class="card">
+                <h2>Ged Gud</h2>
+                <h5>God Gud, Dez 5, 2000</h5>
+                <img src="LibraryPics/PoEM.PNG" class="img">
+                <p>Nobody played that event</p>
+                <p>Change my mind</p>
+            </div>
+
+        </div>
+
+        <!-- Newspage / InfoCards -->
+        <div class="rightcolumn">
+
+            <div class="card">
+                <h2>Über uns</h2>
+                <p>Waldburschen die zu viel Freizeit haben.</p>
+            </div>
+
+            <div class="card">
+                <h3>Findet uns</h3>
+                Steam - <a href="https://steamcommunity.com/groups/willigeWburschen" style="text-decoration-line: underline"> WWB Steamgruppe</a></br>
+                WWB Discord - <a href="https://discord.gg/SzRVufg" style="text-decoration-line: underline"> https://discord.gg/SzRVufg</a> 
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Gallerie / ImageView -->
+<div id="Gallerie" class="tabcontent">
+
+    <select class="selectionBox" id="selectionBox" onchange="filterSelection(value)">
+        <option value='all'>Show all</option>
+        <option value="lol">League of Legends</option>
+        <option value="poe">Path of Exile</option>
+        <option value="mh">Monster Hunter</option>
+        <option value="bl">Borderlands</option>
+        <option value="val">Valorant</option>
+        <option value="cs">Counter Strike GO</option>
+        <option value="dayz">DayZ</option>
+    </select>
 
     <br />
-    <h1> ~ ~ WWB ~ ~ </h1>
 
-    <a href="index.html">Home</a> - <a href="pInfo.html">Infos</a> - <a href="pLibrary.html">Library</a>
+    <div class="gallery" id="gallery">
 
-    <hr />
-    <br />
+        <a href="LibraryPics/borderlands.jpg" data-lightbox="mygallery" data-title="Borderlands easteregg"><img
+                src="LibraryPics/borderlands.jpg" class="libraryThumb filterDiv bl"></a>
 
-    <div class="divBox">
-        Hello there!
+        <a href="LibraryPics/mh.jpg" data-lightbox="mygallery" data-title="Monsterhunter"><img src="LibraryPics/mh.jpg"
+                class="libraryThumb filterDiv mh"></a>
+
+        <a href="LibraryPics/PoeFullAtlas.jpg" data-lightbox="mygallery" data-title="PoE full atlas"><img
+                src="LibraryPics/PoeFullAtlas.jpg" class="libraryThumb filterDiv poe"></a>
+
+        <a href="LibraryPics/CsGoCarry.jpg" data-lightbox="mygallery" data-title="Verdienter Win"><img
+                src="LibraryPics/CsGoCarry.jpg" class="libraryThumb filterDiv cs"></a>
+
+        <a href="LibraryPics/Clash FreljordCup 10.05.2020.PNG" data-lightbox="mygallery"
+            data-title="Clash FreljordCup 10.05.2020"><img src="LibraryPics/Clash FreljordCup 10.05.2020.PNG"
+                class="libraryThumb filterDiv lol"></a>
+
+        <a href="LibraryPics/Invisible bridge.jpg" data-lightbox="mygallery" data-title="Invisible bridge"><img
+                src="LibraryPics/Invisible bridge.jpg" class="libraryThumb filterDiv poe"></a>
+
+        <a href="LibraryPics/Morris macht yoga.jpg" data-lightbox="mygallery" data-title="Morris macht yoga"><img
+                src="LibraryPics/Morris macht yoga.jpg" class="libraryThumb filterDiv dayz"></a>
+
+        <a href="LibraryPics/Protecting the bomb.jpg" data-lightbox="mygallery" data-title="Protecting the bomb"><img
+                src="LibraryPics/Protecting the bomb.jpg" class="libraryThumb filterDiv cs"></a>
+
+        <a href="LibraryPics/Vibing.jpg" data-lightbox="mygallery" data-title="Vibing"><img src="LibraryPics/Vibing.jpg"
+                class="libraryThumb filterDiv cs"></a>
+
+        <a href="LibraryPics/PoeHeistBigRobot.jpg" data-lightbox="mygallery" data-title="PoeHeistBigRobot"><img
+                src="LibraryPics/PoeHeistBigRobot.jpg" class="libraryThumb filterDiv poe"></a>
+
+         <a href="LibraryPics/PoEM.PNG" data-lightbox="mygallery" data-title="PoE Early Heist Ranking"><img
+                src="LibraryPics/PoEM.PNG" class="libraryThumb filterDiv poe"></a>
+                
+        <video controls class="libraryThumb filterDiv cs">
+            <source src="LibraryPics/Cs Headshots.mp4"></video>
+
+        <video controls class="libraryThumb filterDiv lol">
+            <source src="LibraryPics/ClashPlay.mp4"></video>
+
     </div>
 
-    <br />
-    <hr>
-</body>
+</div>
+
+<div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+
+    <!-- Image text -->
+    <div id="imgtext"></div>
+</div>
+
+<script src="js/script.js"></script>
+
 </html>
